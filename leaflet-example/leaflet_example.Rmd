@@ -1,0 +1,13 @@
+---
+title: "My Favourite Restaurant"
+author: "Yi Zheng"
+date: "March 11, 2018"
+output: html_document
+---
+
+```{r, echo=FALSE, warning=FALSE}
+library(leaflet)
+leaflet() %>% 
+        addTiles() %>% 
+        addMarkers(lat=51.515473, lng=-0.1277104, popup= "My Favourite Ramen Restaurant")
+```
